@@ -1,59 +1,64 @@
-*{
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-}
 .container{
     display: flex;
     justify-content: center;
+    /* align-items: center;
+    width: 400px;
+    height: 400px;
+    padding-top: 10px;
+    margin: 50px;
+    position: relative;
+    border: 2px solid; */
 }
-.btn-btn1,.btn-btn2,.btn-btn3,.btn-btn4{
+.btn1,.btn2,.btn3,.btn4{
     font-size: 1.5rem;
     transition: all 2s;
+    display: flex;
+    justify-content: center;
     width: 50px;
     height: 50px;
-
+    align-items: center;
 }
-.btn-btn1:hover{
+.btn1:hover{
     background-color: rgb(29, 133, 147);
     color: white;
     cursor: pointer;
 }
-.btn-btn2:hover{
+.btn2:hover{
     background-color: rgb(29, 133, 147);
     color: white;
     cursor: pointer;
 }
-.btn-btn3:hover{
+.btn3:hover{
     background-color: rgb(29, 133, 147);
     color: white;
     cursor: pointer;
 }
-.btn-btn4:hover{
+.btn4:hover{
     background-color: rgb(29, 133, 147);
     color: white;
     cursor: pointer;
 }
 img{
     width: 300px;
-    height: 300px;
-    text-align: center;
-    transition: all 5s ease;
+    /* height: 300%; */
+    top: 100px;
+    position: absolute;
+    /* transition: all 5s ease; */
     /* transition: all 2s; */
 }
-.btn-btn1:hover~img{
+.container>.btn1:hover~img{
     transition: all 4s;
     transform: rotate(360deg);
 }
-.btn-btn2:hover~img{
+.container>.btn2:hover~img{
     transition: all 3s;
     transform: rotate(360deg);
 }
-.btn-btn3:hover~img{
+.container>.btn3:hover~img{
     transition: 2s;
     transform: rotate(360deg);
 }
-.btn-btn4:hover~img{
+.container>.btn4:hover~img{
     transition: all 1s;
     transform: rotate(360deg);
 } 
